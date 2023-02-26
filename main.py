@@ -8,6 +8,8 @@
 # (команда, данные), можно делать как запрос команды с консоли и
 # последующим вводом данных, как-то ещё, на усмотрение студента
 
+import NotepadReader
+import NotepadWrite
 count = 0
 while count != 6:
     print("Выберите действие\n"
@@ -20,6 +22,7 @@ while count != 6:
     count = int(input(""))
     if count == 1:
         print("write")
+
     if count == 2:
         print("read")
     if count == 3:
