@@ -1,8 +1,13 @@
-import json
+import csv
+from datetime import datetime
 
-numbers = input("Введите заголовок \n")
+with open("classmates.csv", mode="a", encoding='utf-8') as w_file:
 
-filename = 'numbers.json'
-with open(filename, 'a',  encoding='utf-8') as f_obj:
-    json.dump(numbers, f_obj, ensure_ascii=False)
-    f_obj.write('\n')
+    file_writer = csv.writer(w_file, delimiter = ";", lineterminator="\r")
+    current_date_time = datetime.now()
+    file_writer.writerow(["Заголовок", "Заметка", "Дата"])
+    title = input("Введите заголовок: ")
+    note = input("Введите заметку: ")
+    file_writer.writerow([title, note, current_date_time])
+
+

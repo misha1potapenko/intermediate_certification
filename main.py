@@ -8,11 +8,27 @@
 # (команда, данные), можно делать как запрос команды с консоли и
 # последующим вводом данных, как-то ещё, на усмотрение студента
 
+count = 0
+while count != 6:
+    print("Выберите действие\n"
+          "1 - новая запись\n"
+          "2 - чтение\n"
+          "3 - поиск\n"
+          "4 - редактирование\n"
+          "5 - удаление\n"
+          "6 - выход\n")
+    count = int(input(""))
+    if count == 1:
+        print("write")
+    if count == 2:
+        print("read")
+    if count == 3:
+        print("find")
+    if count == 4:
+        print("editing")
+    if count == 5:
+        print("del")
+else:
+    print("Вы вышли из программы")
 
-import json
 
-numbers = 'Go to fish'
-
-filename = 'numbers.json'
-with open(filename, 'w') as f_obj:
-    json.dump(numbers, f_obj)
