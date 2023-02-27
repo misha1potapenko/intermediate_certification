@@ -1,7 +1,7 @@
 import csv
 
 
-def read_file():
+def find_note():
     with open("notepad.csv", encoding='utf-8') as r_file:
         # Создаем объект reader, указываем символ-разделитель ";"
         file_reader = csv.reader(r_file, delimiter = ";")

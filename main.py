@@ -21,10 +21,10 @@ while count != 6:
           "6 - выход\n")
     count = int(input(""))
     if count == 1:
-        print("write")
-
+        NotepadWrite.write_file()
     if count == 2:
         print("read")
+        NotepadReader.read_file()
     if count == 3:
         print("find")
     if count == 4:
