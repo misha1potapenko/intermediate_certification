@@ -10,6 +10,8 @@
 
 import NotepadReader
 import NotepadWrite
+import FindNote
+
 count = 0
 while count != 6:
     print("Выберите действие\n"
@@ -23,10 +25,9 @@ while count != 6:
     if count == 1:
         NotepadWrite.write_file()
     if count == 2:
-        print("read")
         NotepadReader.read_file()
     if count == 3:
-        print("find")
+        FindNote.find_note()
     if count == 4:
         print("editing")
     if count == 5:
