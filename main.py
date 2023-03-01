@@ -8,6 +8,7 @@
 # (команда, данные), можно делать как запрос команды с консоли и
 # последующим вводом данных, как-то ещё, на усмотрение студента
 import ChangeRow
+import DeliteString
 import NotepadReader
 import NotepadWrite
 import FindNote
@@ -32,7 +33,7 @@ while count != 6:
         if count == 4:
             ChangeRow.change_row()
         if count == 5:
-            print("del")
+            DeliteString.delite_row()
     except: print("Введите числа от 1 до 6")
 else:
     print("Вы вышли из программы")
