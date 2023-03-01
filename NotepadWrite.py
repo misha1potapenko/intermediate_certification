@@ -7,7 +7,7 @@ def write_file():
             as r_file:
         file_writer = csv.writer(w_file, delimiter=";", lineterminator="\r")
         # считаем строки
-        count = 1
+        count = 2
         file_reader = csv.DictReader(r_file, delimiter=";")
         for row in file_reader:
             count += 1

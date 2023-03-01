@@ -14,24 +14,26 @@ import FindNote
 
 count = 0
 while count != 6:
-    print("Выберите действие\n"
-          "1 - новая запись\n"
-          "2 - чтение\n"
-          "3 - поиск\n"
-          "4 - редактирование\n"
-          "5 - удаление\n"
-          "6 - выход\n")
-    count = int(input(""))
-    if count == 1:
-        NotepadWrite.write_file()
-    if count == 2:
-        NotepadReader.read_file()
-    if count == 3:
-        FindNote.find_note()
-    if count == 4:
-        ChangeRow.change_row()
-    if count == 5:
-        print("del")
+    try:
+        print("Выберите действие\n"
+              "1 - новая запись\n"
+              "2 - чтение\n"
+              "3 - поиск\n"
+              "4 - редактирование\n"
+              "5 - удаление\n"
+              "6 - выход\n")
+        count = int(input(""))
+        if count == 1:
+            NotepadWrite.write_file()
+        if count == 2:
+            NotepadReader.read_file()
+        if count == 3:
+            FindNote.find_note()
+        if count == 4:
+            ChangeRow.change_row()
+        if count == 5:
+            print("del")
+    except: print("Введите числа от 1 до 6")
 else:
     print("Вы вышли из программы")
 
