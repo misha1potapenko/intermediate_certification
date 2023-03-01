@@ -7,7 +7,7 @@
 # делать как ему удобнее, можно делать как параметры запуска программы
 # (команда, данные), можно делать как запрос команды с консоли и
 # последующим вводом данных, как-то ещё, на усмотрение студента
-
+import ChangeRow
 import NotepadReader
 import NotepadWrite
 import FindNote
@@ -29,7 +29,7 @@ while count != 6:
     if count == 3:
         FindNote.find_note()
     if count == 4:
-        print("editing")
+        ChangeRow.change_row()
     if count == 5:
         print("del")
 else:

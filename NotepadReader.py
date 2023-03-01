@@ -9,6 +9,6 @@ def read_file():
         count = 0
         # Считывание данных из CSV файла
         for row in file_reader:
-            print(f'Заголовок: {row[0]}  Текст заметки: {row[1]}  Дата: {row[2]}')
+            print(f'Номер строки: {row[0]};  Заголовок: {row[1]};  Заметка: {row[2]}; Дата: {row[3]}')
             count += 1
         print(f'Всего в файле {count} строк.')
